@@ -1,0 +1,102 @@
+[W 12:00:43.664 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[W 12:00:43.664 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using authentication. This is highly insecure and not recommended.
+[I 12:00:43.677 NotebookApp] Serving notebooks from local directory: /home/carnd/models/research/object_detection
+[I 12:00:43.677 NotebookApp] 0 active kernels 
+[I 12:00:43.677 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 12:00:43.677 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 12:00:43.678 NotebookApp] No web browser found: could not locate runnable browser.
+[W 12:00:44.486 NotebookApp] 404 GET /api/kernels/cd959632-b88e-4640-bd52-8978000c358e/channels?session_id=C9CB378B1EF7400FAD571CC4069965AA (122.15.156.72): Kernel does not exist: cd959632-b88e-4640-bd52-8978000c358e
+[W 12:00:44.533 NotebookApp] 404 GET /api/kernels/cd959632-b88e-4640-bd52-8978000c358e/channels?session_id=C9CB378B1EF7400FAD571CC4069965AA (122.15.156.72) 54.43ms referer=None
+[W 12:01:49.939 NotebookApp] Replacing stale connection: cd959632-b88e-4640-bd52-8978000c358e:C9CB378B1EF7400FAD571CC4069965AA
+[E 12:04:25.047 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/carnd/anaconda3/envs/carnd-term1/lib/python3.5/site-packages/notebook/services/kernels/handlers.py", line 90, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/home/carnd/anaconda3/envs/carnd-term1/lib/python3.5/site-packages/notebook/services/kernels/kernelmanager.py", line 120, in restart_kernel
+        self._check_kernel_id(kernel_id)
+      File "/home/carnd/anaconda3/envs/carnd-term1/lib/python3.5/site-packages/notebook/services/kernels/kernelmanager.py", line 199, in _check_kernel_id
+        raise web.HTTPError(404, u'Kernel does not exist: %s' % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: cd959632-b88e-4640-bd52-8978000c358e)
+[E 12:04:25.050 NotebookApp] {
+      "Accept-Encoding": "gzip, deflate",
+      "X-Requested-With": "XMLHttpRequest",
+      "Connection": "Keep-Alive",
+      "Cookie": "_xsrf=2|6c7b1f87|7c5c41d99766d54381a3ae1454cb8320|1532598838; BCSI-CS-ee7e30f120188340=2; BCSI-CS-94a977aee9df674a=2",
+      "Host": "34.212.27.118:8888",
+      "X-Xsrftoken": "2|6c7b1f87|7c5c41d99766d54381a3ae1454cb8320|1532598838",
+      "Origin": "http://34.212.27.118:8888",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://34.212.27.118:8888/notebooks/object_detection_tutorial.ipynb",
+      "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+      "Content-Length": "0",
+      "Dnt": "1"
+    }
+[E 12:04:25.050 NotebookApp] 500 POST /api/kernels/cd959632-b88e-4640-bd52-8978000c358e/restart (122.15.156.72) 3.53ms referer=http://34.212.27.118:8888/notebooks/object_detection_tutorial.ipynb
+[W 12:04:25.484 NotebookApp] Session not found: session_id='bc16ad24-2ff4-4e9e-b693-a772dfaea907'
+[W 12:04:25.485 NotebookApp] 404 DELETE /api/sessions/bc16ad24-2ff4-4e9e-b693-a772dfaea907 (122.15.156.72) 1.41ms referer=http://34.212.27.118:8888/notebooks/object_detection_tutorial.ipynb
+[W 12:04:25.771 NotebookApp] Session not found: session_id='bc16ad24-2ff4-4e9e-b693-a772dfaea907'
+[W 12:04:25.772 NotebookApp] 404 GET /api/sessions/bc16ad24-2ff4-4e9e-b693-a772dfaea907 (180.179.142.108) 1.22ms referer=None
+[I 12:04:26.035 NotebookApp] Kernel started: 3bc2a865-6d77-461b-9e41-36783c2adf8a
+2018-07-30 12:06:18.260052: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+[I 12:08:08.421 NotebookApp] 302 GET / (180.179.142.108) 0.46ms
+[I 12:10:29.511 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 12:45:56.090 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 13:02:46.491 NotebookApp] 302 GET / (122.15.156.72) 0.47ms
+[I 13:02:47.758 NotebookApp] 302 GET / (46.235.158.196) 0.45ms
+[I 13:03:31.215 NotebookApp] 302 GET / (180.179.142.108) 0.47ms
+[W 13:03:31.592 NotebookApp] 404 GET /favicon.ico (122.15.156.72) 2.93ms referer=http://34.212.27.118:8888/view/images/image_863.jpg
+[I 13:21:24.660 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[W 13:29:45.816 NotebookApp] 404 GET /v1/wallet/list_keys (185.169.231.209) 1.45ms referer=None
+[I 13:56:54.675 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 14:04:47.122 NotebookApp] 302 GET / (120.77.240.5) 0.44ms
+[I 14:32:24.856 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 15:06:24.482 NotebookApp] 302 GET / (138.197.182.14) 0.45ms
+[I 15:07:55.705 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 15:43:26.328 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 16:18:55.576 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 16:54:25.718 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 17:29:55.808 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 18:05:25.914 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 18:14:36.471 NotebookApp] 302 GET / (159.65.79.112) 0.45ms
+[I 18:40:56.473 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 19:16:26.407 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 19:51:56.493 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 20:27:26.254 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[W 20:36:00.489 NotebookApp] 404 GET /v1/wallet/list_keys (185.169.231.209) 1.43ms referer=None
+[I 21:02:57.109 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 21:38:26.218 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 22:13:56.143 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 22:49:26.547 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 23:24:55.831 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 00:00:26.727 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[W 00:13:26.831 NotebookApp] 404 GET /v1/wallet/list_keys (185.169.231.209) 1.48ms referer=None
+[I 00:35:55.930 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 01:11:26.645 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 01:46:56.510 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 02:22:26.149 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 02:57:56.694 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[W 03:15:20.841 NotebookApp] 404 GET /v1/wallet/list_keys (185.169.231.209) 1.39ms referer=None
+[I 03:33:26.904 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 04:08:57.505 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 04:14:49.891 NotebookApp] 302 GET / (85.237.31.37) 0.52ms
+[I 04:44:26.431 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 05:17:10.957 NotebookApp] 302 GET / (80.211.22.67) 1.22ms
+[I 05:18:26.593 NotebookApp] 302 GET / (190.94.141.219) 0.45ms
+[I 05:19:57.138 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 05:23:18.562 NotebookApp] 302 GET / (182.55.90.82) 0.52ms
+[I 05:37:39.033 NotebookApp] 302 GET / (180.179.142.108) 0.46ms
+[I 05:37:39.282 NotebookApp] 302 GET / (46.235.158.196) 0.46ms
+[I 05:56:52.697 NotebookApp] Saving file at /object_detection_tutorial.ipynb
+[I 06:29:24.225 NotebookApp] 302 GET / (180.179.142.108) 0.40ms
+[I 06:29:24.227 NotebookApp] 302 GET / (46.235.158.196) 0.31ms
+[I 07:36:02.270 NotebookApp] 302 GET / (169.54.244.89) 0.45ms
+[I 07:56:42.275 NotebookApp] 302 GET / (145.128.189.206) 0.45ms
+[I 08:36:50.064 NotebookApp] KernelRestarter: restarting kernel (1/5)
+WARNING:root:kernel 3bc2a865-6d77-461b-9e41-36783c2adf8a restarted
+[I 08:53:24.281 NotebookApp] 302 GET / (122.15.156.72) 0.50ms
+[I 08:53:25.327 NotebookApp] 302 GET / (46.235.158.196) 0.44ms
+[W 09:02:20.278 NotebookApp] 404 GET /v1/wallet/list_keys (185.169.231.209) 1.46ms referer=None
+[C 09:05:12.764 NotebookApp] received signal 15, stopping
+[I 09:05:12.765 NotebookApp] Shutting down kernels
+[I 09:05:12.870 NotebookApp] Kernel shutdown: 3bc2a865-6d77-461b-9e41-36783c2adf8a
